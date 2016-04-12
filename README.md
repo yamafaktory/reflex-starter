@@ -1,4 +1,4 @@
-# reflex-starter
+# reflex-starter [![Build Status](https://travis-ci.org/yamafaktory/reflex-starter.svg?branch=master)](https://travis-ci.org/yamafaktory/reflex-starter)
 
 > A simple starter project for building Reflex applications with [Stack](https://github.com/commercialhaskell/stack).
 
