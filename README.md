@@ -6,13 +6,13 @@ If you don't know what Reflex is, please refer to [the main repository](https://
 
 Reflex is built on top of [GHCJS](https://github.com/ghcjs/ghcjs) which is a Haskell to JavaScript compiler. A lot of modern Haskell features are available through GHCJS which makes it a really good contestant against Elm or PureScript (especially if you want to stick with Haskell).
 
-# Prerequisite
+## Prerequisite
 
-GHCJS needs (NodeJS)[https://nodejs.org] to be installed, and a (recent version)[https://github.com/commercialhaskell/stack/issues/1496].
+GHCJS needs [NodeJS](https://nodejs.org) to be installed, and a [recent version](https://github.com/commercialhaskell/stack/issues/1496).
 
 The easiest way to go is to use [nvm](https://github.com/creationix/nvm) and to install one of the 5.x.x versions.
 
-# Installation
+## Installation
 
 Clone this repository.
 
@@ -26,7 +26,7 @@ Install GHCJS from source and boot it (go grab a coffee, a long one).
 stack setup
 ```
 
-# Usage
+## Usage
 
 Build the default project.
 
@@ -40,7 +40,7 @@ Go to the `.stack-work` directory and search for the `reflex-starter.jsexe` subd
 ```
 Open the `index.html` in your browser and enjoy!
 
-# Updating the GHCJS version
+## Updating the GHCJS version
 
 Open the `stack.yml` file and replace the compiler version and the GHCJS source to match a newer released version of [Luite's builds](http://ghcjs.luite.com/). You just have to change the date (*20160409*) three times.
 
@@ -54,7 +54,7 @@ setup-info:
         url: "http://ghcjs.luite.com/master-20160409.tar.gz"
 ```
 
-# GHCJSi bonus
+## GHCJSi bonus
 
 With the recent GHCJS builds, the GHCJSi REPL is now available!
 
@@ -62,6 +62,6 @@ With the recent GHCJS builds, the GHCJSi REPL is now available!
 stack ghci
 ```
 
-# License
+## License
 
 Released under the [BSD-3 license](https://opensource.org/licenses/BSD-3-Clause).
