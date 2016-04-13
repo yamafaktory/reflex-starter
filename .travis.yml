@@ -5,6 +5,9 @@ before_install:
   - export PATH=~/.local/bin/stack:$PATH
   - travis_retry curl -L https://github.com/commercialhaskell/stack/releases/download/v1.0.4.3/stack-1.0.4.3-linux-x86_64.tar.gz | tar -xzf- -C ~/.local/bin/stack --strip-components=1
   - chmod a+x ~/.local/bin/stack/stack
+  - cabal update
+  - cabal install happy
+  - cabal clean
   - nvm install 5.9.0
   - nvm use 5.9.0
 
@@ -14,9 +17,9 @@ cache:
 
 install:
   - stack setup --no-terminal
-  - stack build -j1 --no-terminal
+  - stack build -j1 --only-dependencies --no-terminal
 
 script:
-  - stack build -j1 --no-terminal
+  - stack build -j1 --only-dependencies --no-terminal
 
 sudo: false
