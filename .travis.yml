@@ -11,6 +11,7 @@ cache:
     - $HOME/.stack/
 
 install:
+  - cabal install happy
   - stack setup --no-terminal
   - stack build --no-terminal
 
