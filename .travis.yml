@@ -14,9 +14,9 @@ cache:
 
 install:
   - stack setup --no-terminal
-  - stack build --no-terminal
+  - stack build -j1 --no-terminal
 
 script:
-  - stack build --no-terminal
+  - stack build -j1 --no-terminal
 
 sudo: false
