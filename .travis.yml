@@ -11,7 +11,7 @@ cache:
     - $HOME/.stack/
 
 install:
-  - cabal install happy
+  - nvm use 5.9.0
   - stack setup --no-terminal
   - stack build --no-terminal
 
