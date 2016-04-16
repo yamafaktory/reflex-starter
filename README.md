@@ -42,16 +42,16 @@ Open the `index.html` in your browser and enjoy!
 
 ## Updating the GHCJS version
 
-Open the `stack.yml` file and replace the compiler version and the GHCJS source to match a newer released version of [Luite's builds](http://ghcjs.luite.com/). You just have to change the date (*20160409*) three times.
+Open the `stack.yml` file and replace the compiler version and the GHCJS source to match a newer released version of [Luite's builds](http://ghcjs.luite.com/). You just have to change the date (*20160416*) three times.
 
 ```yaml
-compiler: ghcjs-0.2.0.20160409_ghc-7.10.2
+compiler: ghcjs-0.2.0.20160416_ghc-7.10.2
 compiler-check: match-exact
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.20160409_ghc-7.10.2:
-        url: "http://ghcjs.luite.com/master-20160409.tar.gz"
+      ghcjs-0.2.0.20160416_ghc-7.10.2:
+        url: "http://ghcjs.luite.com/master-20160416.tar.gz"
 ```
 
 ## GHCJSi bonus
@@ -61,6 +61,12 @@ With the recent GHCJS builds, the GHCJSi REPL is now available!
 ```bash
 stack ghci
 ```
+
+## Stack issues
+
+If you get issues during the `stack build` step, please try to remove your `~/.stack` directory and also the `.stack-work` directory within the project's directory as explained in the [Stack FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md#how-do-i-reset--remove-stack-such-as-to-to-do-a-completely-fresh-build).
+
+If this procedure doesn't solve the issue, please first try to check the [Stack's issue tracker](https://github.com/commercialhaskell/stack/issues).
 
 ## License
 
