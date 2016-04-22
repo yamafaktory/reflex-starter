@@ -8,6 +8,12 @@ Reflex is built on top of [GHCJS](https://github.com/ghcjs/ghcjs) which is a Has
 
 ## Prerequisite
 
+### Stack
+
+Install Stack as described in the [how-to-install section of the FAQ](http://docs.haskellstack.org/en/stable/README/#how-to-install).
+
+### NodeJS
+
 GHCJS needs [NodeJS](https://nodejs.org) to be installed, and a [recent version](https://github.com/commercialhaskell/stack/issues/1496).
 
 The easiest way to go is to use [nvm](https://github.com/creationix/nvm) and to install one of the 5.x.x versions.
@@ -64,9 +70,27 @@ stack ghci
 
 ## Stack issues
 
-If you get issues during the `stack build` step, please try to remove your `~/.stack` directory and also the `.stack-work` directory within the project's directory as explained in the [Stack FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md#how-do-i-reset--remove-stack-such-as-to-to-do-a-completely-fresh-build).
+Please check both the [Stack's issue tracker](https://github.com/commercialhaskell/stack/issues) and the [Stack's FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md) first before creating an issue.
 
-If this procedure doesn't solve the issue, please first try to check the [Stack's issue tracker](https://github.com/commercialhaskell/stack/issues).
+Be sure to be have an up-to-date Stack version, this could be easily achieved by running the following command:
+
+```bash
+stack upgrade --git
+```
+
+### Setup command
+
+If the following error message is thrown during the `stack setup` step:
+
+```bash
+The program 'ghc' is required but it could not be found
+```
+
+You probably need to check your **$PATH** variable (see this [issue](https://github.com/yamafaktory/reflex-starter/issues/2)).
+
+### Build command
+
+If you get issues during the `stack build` step, please try to remove your `~/.stack` directory and also the `.stack-work` directory within the project's directory as explained in the [Stack's FAQ](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md#how-do-i-reset--remove-stack-such-as-to-to-do-a-completely-fresh-build).
 
 ## License
 
