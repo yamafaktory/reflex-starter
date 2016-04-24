@@ -11,10 +11,10 @@ extra-deps:
 
 extra-package-dbs: []
 
-compiler: ghcjs-0.2.0.20160416_ghc-7.10.2
+compiler: ghcjs-0.2.0.20160424_ghc-7.10.2
 compiler-check: match-exact
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.20160416_ghc-7.10.2:
-        url: "http://ghcjs.luite.com/master-20160416.tar.gz"
+      ghcjs-0.2.0.20160424_ghc-7.10.2:
+        url: "http://ghcjs.luite.com/master-20160424.tar.gz"
