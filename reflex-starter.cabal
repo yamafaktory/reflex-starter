@@ -1,5 +1,5 @@
 name:                reflex-starter
-version:             1.2.0
+version:             1.2.1
 synopsis:            A simple starter project for building Reflex applications with Stack
 description:         This starter project aims at providing the default working setup for building up-to-date Reflex applications with Stack.
 homepage:            https://github.com/yamafaktory/reflex-starter
