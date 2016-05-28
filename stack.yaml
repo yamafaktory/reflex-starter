@@ -1,4 +1,4 @@
-resolver: lts-5.18
+resolver: lts-6.0
 
 flags: {}
 
@@ -11,10 +11,10 @@ extra-deps:
 
 extra-package-dbs: []
 
-compiler: ghcjs-0.2.0.20160525_ghc-7.10.2
+compiler: ghcjs-0.2.0.20160528_ghc-7.10.2
 compiler-check: match-exact
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.20160525_ghc-7.10.2:
-        url: "http://ghcjs.luite.com/master-20160525.tar.gz"
+      ghcjs-0.2.0.20160528_ghc-7.10.2:
+        url: "http://ghcjs.luite.com/master-20160528.tar.gz"
